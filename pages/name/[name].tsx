@@ -139,7 +139,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
     const { name } = params as { name: string };
 
-    const pokemon = await getPokemonInfo(name);
+    const pokemon = await getPokemonInfo(name.toLocaleLowerCase());
 
     if (!pokemon) {
         return {
