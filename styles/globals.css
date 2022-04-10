@@ -1,0 +1,16 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.card-pokemon {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .card-pokemon {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
